@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TempLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    tools:context="pope.project1_tempconverter.MainActivity">
+
+    <TextView
+        android:id="@+id/fahrenheitTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/celsiusTV"
+        android:layout_below="@+id/degreesTV"
+        android:layout_marginTop="17dp"
+        android:text="@string/fahrenheit_tv"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/celsiusTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fahrenheitTV"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="47dp"
+        android:text="@string/celsius_tv"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/celsiusNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius_num_tv"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/celsiusTV"
+        android:layout_alignBottom="@+id/celsiusTV"
+        android:layout_alignStart="@+id/fahreinheitET" />
+
+    <TextView
+        android:id="@+id/degreesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/degrees_tv"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/celsiusNumTV" />
+
+    <EditText
+        android:id="@+id/fahreinheitET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fahrenheitTV"
+        android:layout_alignBottom="@+id/fahrenheitTV"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/fahrenheitTV"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/thermometer" />
+
+</RelativeLayout>
