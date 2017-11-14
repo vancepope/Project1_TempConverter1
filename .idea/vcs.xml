@@ -5,5 +5,10 @@
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app/src/main/java/pope/project1_tempconverter" vcs="Git" />
+    <mapping directory="C:\Users\vance\Documents\COM262\AndroidStudioProjects\Project1_TempConverter\Project1Temp" vcs="Git" />
+    <mapping directory="C:\Users\vance\Documents\COM262\AndroidStudioProjects\Project1_TempConverter\Project1_Temp" vcs="Git" />
+    <mapping directory="C:\Users\vance\Documents\COM262\AndroidStudioProjects\Project1_TempConverter\Project1_TempConverter" vcs="Git" />
+    <mapping directory="C:\Users\vance\Documents\COM262\AndroidStudioProjects\Project1_TempConverter\Project1_TempConverter1" vcs="Git" />
+    <mapping directory="C:\Users\vance\Documents\COM262\AndroidStudioProjects\Project1_TempConverter\vancepope-projects" vcs="Git" />
   </component>
 </project>
