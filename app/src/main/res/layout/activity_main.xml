@@ -3,75 +3,58 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/TempLayout"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:textAlignment="center"
     tools:context="pope.project1_tempconverter.MainActivity">
 
     <TextView
-        android:id="@+id/fahrenheitTV"
+        android:id="@+id/celsiusNumTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/celsiusTV"
-        android:layout_below="@+id/degreesTV"
-        android:layout_marginTop="17dp"
-        android:text="@string/fahrenheit_tv"
+        android:layout_marginTop="183dp"
+        android:text="0.0"
         android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/celsiusTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/fahrenheitTV"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="47dp"
-        android:text="@string/celsius_tv"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/celsiusNumTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/celsius_num_tv"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/celsiusTV"
-        android:layout_alignBottom="@+id/celsiusTV"
-        android:layout_alignStart="@+id/fahreinheitET" />
-
-    <TextView
-        android:id="@+id/degreesTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:text="@string/degrees_tv"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/celsiusNumTV" />
+        android:layout_alignStart="@+id/fahrenEt" />
 
     <EditText
-        android:id="@+id/fahreinheitET"
+        android:id="@+id/fahrenEt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/fahrenheitTV"
-        android:layout_alignBottom="@+id/fahrenheitTV"
-        android:layout_marginStart="18dp"
-        android:layout_toEndOf="@+id/fahrenheitTV"
+        android:layout_alignBottom="@+id/celsiusNumTv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="numberDecimal" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/fahrenheitTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/fahrenEt"
         android:layout_alignParentStart="true"
-        android:adjustViewBounds="true"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/thermometer" />
+        android:layout_marginStart="31dp"
+        android:text="Fahrenheit"
+        android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/celsiusTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/celsiusNumTv"
+        android:layout_alignStart="@+id/fahrenheitTv"
+        android:text="Celsius"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/celsiusNumTv"
+        android:layout_below="@+id/fahrenEt"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="57dp"
+        android:text="Calculate" />
 </RelativeLayout>
